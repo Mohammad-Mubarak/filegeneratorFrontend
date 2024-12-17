@@ -142,7 +142,7 @@ export default function Home() {
 
     setGenerating(true);
     try {
-      const response = await axios.post('http://localhost:5000/api/generate', {
+      const response = await axios.post('https://filebackend-eke6.onrender.com/api/generate', {
         fileType,
         fileSize,
         properties: properties.map(({ id, ...rest }) => rest), // Exclude 'id'
